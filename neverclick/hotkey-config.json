@@ -1,0 +1,4477 @@
+{
+     "hotkeys": [
+          {
+               "binding": {
+                    "classId": "BasicMouseActionTool",
+                    "config": {
+                         "doSaveActionWhenFinished": true,
+                         "finalMousePosition": {
+                              "type": "returnToOrigin"
+                         },
+                         "keybinds": {
+                              "type": "shared"
+                         },
+                         "mouseAction": "LeftClick",
+                         "mouseActionModifiers": [],
+                         "numberOfTicksBetweenMouseActions": 7,
+                         "targetTransformStrategy": "Center",
+                         "visionStrategy": "Vision"
+                    },
+                    "type": "tool"
+               },
+               "isEnabled": true,
+               "keyCombo": {
+                    "ctrl": "Either",
+                    "key": "Enter"
+               },
+               "type": "hotkey"
+          },
+          {
+               "binding": {
+                    "classId": "TextSelectionTool",
+                    "config": {
+                         "finalMousePosition": {
+                              "type": "returnToOrigin"
+                         },
+                         "keybinds": {
+                              "type": "shared"
+                         },
+                         "mouseActionModifiers": [],
+                         "visionStrategy": "Vision"
+                    },
+                    "type": "tool"
+               },
+               "isEnabled": true,
+               "keyCombo": {
+                    "alt": "Either",
+                    "ctrl": "Either",
+                    "key": "Enter"
+               },
+               "type": "hotkey"
+          },
+          {
+               "binding": {
+                    "classId": "BasicMouseActionTool",
+                    "config": {
+                         "doSaveActionWhenFinished": true,
+                         "finalMousePosition": {
+                              "type": "returnToOrigin"
+                         },
+                         "keybinds": {
+                              "type": "shared"
+                         },
+                         "mouseAction": "RightClick",
+                         "mouseActionModifiers": [],
+                         "numberOfTicksBetweenMouseActions": 7,
+                         "targetTransformStrategy": "Center",
+                         "visionStrategy": "Vision"
+                    },
+                    "type": "tool"
+               },
+               "isEnabled": true,
+               "keyCombo": {
+                    "alt": "Either",
+                    "key": "Enter"
+               },
+               "type": "hotkey"
+          },
+          {
+               "binding": {
+                    "classId": "DragTool",
+                    "config": {
+                         "dragSpeed": "Fast",
+                         "dragStrategy": "AllToLast",
+                         "finalMousePosition": {
+                              "type": "returnToOrigin"
+                         },
+                         "keybinds": {
+                              "type": "shared"
+                         },
+                         "mouseAction": "LeftClick",
+                         "mouseActionModifiers": [],
+                         "targetTransformStrategy": "Center",
+                         "visionStrategy": "Vision"
+                    },
+                    "type": "tool"
+               },
+               "isEnabled": true,
+               "keyCombo": {
+                    "ctrl": "Either",
+                    "key": "Enter",
+                    "shift": "Either"
+               },
+               "type": "hotkey"
+          }
+     ],
+     "sharedKeybinds": {
+          "BasicMouseActionTool": [
+               {
+                    "action": {
+                         "classId": "Exit"
+                    },
+                    "keyCombo": {
+                         "key": "Escape"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "Clear"
+                    },
+                    "keyCombo": {
+                         "key": "Backspace"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "UndoHintSelection"
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Z"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "RevealOverlappedHints"
+                    },
+                    "keyCombo": {
+                         "key": "Space"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ToggleHintPlacement"
+                    },
+                    "keyCombo": {
+                         "key": "Space",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "GridMode"
+                    },
+                    "keyCombo": {
+                         "key": "Semicolon"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ClairvoyanceMode"
+                    },
+                    "keyCombo": {
+                         "key": "LeftBracket"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "VisionMode",
+                         "vision": {
+                              "detectionModel": "Narrow",
+                              "removeHallucinations": true
+                         }
+                    },
+                    "keyCombo": {
+                         "key": "RightBracket"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "VisionMode",
+                         "vision": {
+                              "detectionModel": "UltraNarrow",
+                              "removeHallucinations": true
+                         }
+                    },
+                    "keyCombo": {
+                         "key": "RightBracket",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "Run"
+                    },
+                    "keyCombo": {
+                         "key": "Enter"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "PassThrough"
+                    },
+                    "keyCombo": {
+                         "key": "PrintScreen"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetFieldOfVision",
+                         "target": "Window"
+                    },
+                    "keyCombo": {
+                         "key": "F1"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetFieldOfVision",
+                         "target": "Monitor"
+                    },
+                    "keyCombo": {
+                         "key": "F2"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetFieldOfVision",
+                         "target": "AllMonitors"
+                    },
+                    "keyCombo": {
+                         "key": "F3"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ToggleFieldOfVision",
+                         "fovA": "Window",
+                         "fovB": "AllMonitors"
+                    },
+                    "keyCombo": {
+                         "key": "Tab"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ShiftFocus",
+                         "direction": "Up"
+                    },
+                    "keyCombo": {
+                         "key": "W",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ShiftFocus",
+                         "direction": "Left"
+                    },
+                    "keyCombo": {
+                         "key": "A",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ShiftFocus",
+                         "direction": "Down"
+                    },
+                    "keyCombo": {
+                         "key": "S",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ShiftFocus",
+                         "direction": "Right"
+                    },
+                    "keyCombo": {
+                         "key": "D",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "CycleWindows",
+                         "direction": "Backward"
+                    },
+                    "keyCombo": {
+                         "key": "Q",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "CycleWindows",
+                         "direction": "Forward"
+                    },
+                    "keyCombo": {
+                         "key": "E",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "FocusWindowBehind"
+                    },
+                    "keyCombo": {
+                         "key": "Z",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "CycleFieldsOfVision"
+                    },
+                    "keyCombo": {
+                         "key": "F",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "RefreshHints"
+                    },
+                    "keyCombo": {
+                         "key": "R",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "DualSelect"
+                    },
+                    "keyCombo": {
+                         "key": "Quotes"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MultiSelect"
+                    },
+                    "keyCombo": {
+                         "key": "Quotes",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "PathSelect",
+                         "margin": 10
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Quotes"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "DualSelect"
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "D"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MultiSelect"
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "M"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "PathSelect",
+                         "margin": 10
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "P"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "LockTargets"
+                    },
+                    "keyCombo": {
+                         "key": "Tilde"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "alt": true,
+                         "classId": "ToggleModifiers",
+                         "ctrl": false,
+                         "shift": false
+                    },
+                    "keyCombo": {
+                         "key": "Comma"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "alt": false,
+                         "classId": "ToggleModifiers",
+                         "ctrl": true,
+                         "shift": false
+                    },
+                    "keyCombo": {
+                         "key": "Period"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "alt": false,
+                         "classId": "ToggleModifiers",
+                         "ctrl": false,
+                         "shift": true
+                    },
+                    "keyCombo": {
+                         "key": "Slash"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "alt": true,
+                         "classId": "ToggleModifiers",
+                         "ctrl": false,
+                         "shift": false
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "A"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "alt": false,
+                         "classId": "ToggleModifiers",
+                         "ctrl": true,
+                         "shift": false
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "C"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "alt": false,
+                         "classId": "ToggleModifiers",
+                         "ctrl": false,
+                         "shift": true
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "S"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": -4,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "J",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": -4
+                    },
+                    "keyCombo": {
+                         "key": "I",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 4,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "L",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": 4
+                    },
+                    "keyCombo": {
+                         "key": "K",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": -2,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "J",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": -2
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "I",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 2,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "L",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": 2
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "K",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": -4,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "Left"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": -4
+                    },
+                    "keyCombo": {
+                         "key": "Up"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 4,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "Right"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": 4
+                    },
+                    "keyCombo": {
+                         "key": "Down"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": -2,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Left"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": -2
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Up"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 2,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Right"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": 2
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Down"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.0,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit1"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.125,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit2"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.25,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit3"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.375,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit4"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit5"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.625,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit6"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.75,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit7"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.875,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit8"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 1.0,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit9"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.0
+                    },
+                    "keyCombo": {
+                         "key": "Digit1",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.125
+                    },
+                    "keyCombo": {
+                         "key": "Digit2",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.25
+                    },
+                    "keyCombo": {
+                         "key": "Digit3",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.375
+                    },
+                    "keyCombo": {
+                         "key": "Digit4",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit5",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.625
+                    },
+                    "keyCombo": {
+                         "key": "Digit6",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.75
+                    },
+                    "keyCombo": {
+                         "key": "Digit7",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.875
+                    },
+                    "keyCombo": {
+                         "key": "Digit8",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 1.0
+                    },
+                    "keyCombo": {
+                         "key": "Digit9",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.0,
+                         "percentY": 1.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad1"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 1.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad2"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 1.0,
+                         "percentY": 1.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad3"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.0,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Numpad4"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Numpad5"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 1.0,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Numpad6"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.0,
+                         "percentY": 0.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad7"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad8"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 1.0,
+                         "percentY": 0.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad9"
+                    },
+                    "type": "keybind"
+               }
+          ],
+          "DragTool": [
+               {
+                    "action": {
+                         "classId": "Exit"
+                    },
+                    "keyCombo": {
+                         "key": "Escape"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "Clear"
+                    },
+                    "keyCombo": {
+                         "key": "Backspace"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "UndoHintSelection"
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Z"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "RevealOverlappedHints"
+                    },
+                    "keyCombo": {
+                         "key": "Space"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ToggleHintPlacement"
+                    },
+                    "keyCombo": {
+                         "key": "Space",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "GridMode"
+                    },
+                    "keyCombo": {
+                         "key": "Semicolon"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ClairvoyanceMode"
+                    },
+                    "keyCombo": {
+                         "key": "LeftBracket"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "VisionMode",
+                         "vision": {
+                              "detectionModel": "Narrow",
+                              "removeHallucinations": true
+                         }
+                    },
+                    "keyCombo": {
+                         "key": "RightBracket"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "VisionMode",
+                         "vision": {
+                              "detectionModel": "UltraNarrow",
+                              "removeHallucinations": true
+                         }
+                    },
+                    "keyCombo": {
+                         "key": "RightBracket",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "Run"
+                    },
+                    "keyCombo": {
+                         "key": "Enter"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "PassThrough"
+                    },
+                    "keyCombo": {
+                         "key": "PrintScreen"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetFieldOfVision",
+                         "target": "Window"
+                    },
+                    "keyCombo": {
+                         "key": "F1"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetFieldOfVision",
+                         "target": "Monitor"
+                    },
+                    "keyCombo": {
+                         "key": "F2"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetFieldOfVision",
+                         "target": "AllMonitors"
+                    },
+                    "keyCombo": {
+                         "key": "F3"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ToggleFieldOfVision",
+                         "fovA": "Window",
+                         "fovB": "AllMonitors"
+                    },
+                    "keyCombo": {
+                         "key": "Tab"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ShiftFocus",
+                         "direction": "Up"
+                    },
+                    "keyCombo": {
+                         "key": "W",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ShiftFocus",
+                         "direction": "Left"
+                    },
+                    "keyCombo": {
+                         "key": "A",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ShiftFocus",
+                         "direction": "Down"
+                    },
+                    "keyCombo": {
+                         "key": "S",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ShiftFocus",
+                         "direction": "Right"
+                    },
+                    "keyCombo": {
+                         "key": "D",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "CycleWindows",
+                         "direction": "Backward"
+                    },
+                    "keyCombo": {
+                         "key": "Q",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "CycleWindows",
+                         "direction": "Forward"
+                    },
+                    "keyCombo": {
+                         "key": "E",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "FocusWindowBehind"
+                    },
+                    "keyCombo": {
+                         "key": "Z",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "CycleFieldsOfVision"
+                    },
+                    "keyCombo": {
+                         "key": "F",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "RefreshHints"
+                    },
+                    "keyCombo": {
+                         "key": "R",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "RegionSelect",
+                         "margin": 10
+                    },
+                    "keyCombo": {
+                         "key": "Quotes"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MultiSelect"
+                    },
+                    "keyCombo": {
+                         "key": "Quotes",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "PathSelect",
+                         "margin": 10
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Quotes"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "RegionSelect",
+                         "margin": 10
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "R"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MultiSelect"
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "M"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "PathSelect",
+                         "margin": 10
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "P"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "DragSpeed",
+                         "speed": "Slow"
+                    },
+                    "keyCombo": {
+                         "key": "Tilde"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "alt": true,
+                         "classId": "ToggleModifiers",
+                         "ctrl": false,
+                         "shift": false
+                    },
+                    "keyCombo": {
+                         "key": "Comma"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "alt": false,
+                         "classId": "ToggleModifiers",
+                         "ctrl": true,
+                         "shift": false
+                    },
+                    "keyCombo": {
+                         "key": "Period"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "alt": false,
+                         "classId": "ToggleModifiers",
+                         "ctrl": false,
+                         "shift": true
+                    },
+                    "keyCombo": {
+                         "key": "Slash"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "alt": true,
+                         "classId": "ToggleModifiers",
+                         "ctrl": false,
+                         "shift": false
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "A"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "alt": false,
+                         "classId": "ToggleModifiers",
+                         "ctrl": true,
+                         "shift": false
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "C"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "alt": false,
+                         "classId": "ToggleModifiers",
+                         "ctrl": false,
+                         "shift": true
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "S"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": -4,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "J",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": -4
+                    },
+                    "keyCombo": {
+                         "key": "I",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 4,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "L",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": 4
+                    },
+                    "keyCombo": {
+                         "key": "K",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": -2,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "J",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": -2
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "I",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 2,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "L",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": 2
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "K",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": -4,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "Left"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": -4
+                    },
+                    "keyCombo": {
+                         "key": "Up"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 4,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "Right"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": 4
+                    },
+                    "keyCombo": {
+                         "key": "Down"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": -2,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Left"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": -2
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Up"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 2,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Right"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": 2
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Down"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.0,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit1"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.125,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit2"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.25,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit3"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.375,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit4"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit5"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.625,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit6"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.75,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit7"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.875,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit8"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 1.0,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit9"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.0
+                    },
+                    "keyCombo": {
+                         "key": "Digit1",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.125
+                    },
+                    "keyCombo": {
+                         "key": "Digit2",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.25
+                    },
+                    "keyCombo": {
+                         "key": "Digit3",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.375
+                    },
+                    "keyCombo": {
+                         "key": "Digit4",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit5",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.625
+                    },
+                    "keyCombo": {
+                         "key": "Digit6",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.75
+                    },
+                    "keyCombo": {
+                         "key": "Digit7",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.875
+                    },
+                    "keyCombo": {
+                         "key": "Digit8",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 1.0
+                    },
+                    "keyCombo": {
+                         "key": "Digit9",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.0,
+                         "percentY": 1.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad1"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 1.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad2"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 1.0,
+                         "percentY": 1.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad3"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.0,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Numpad4"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Numpad5"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 1.0,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Numpad6"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.0,
+                         "percentY": 0.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad7"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad8"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 1.0,
+                         "percentY": 0.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad9"
+                    },
+                    "type": "keybind"
+               }
+          ],
+          "StickyHintsTool": [
+               {
+                    "action": {
+                         "classId": "Exit"
+                    },
+                    "keyCombo": {
+                         "key": "Escape"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "Clear"
+                    },
+                    "keyCombo": {
+                         "key": "Backspace"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "UndoHintSelection"
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Z"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "RevealOverlappedHints"
+                    },
+                    "keyCombo": {
+                         "key": "Space"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ToggleHintPlacement"
+                    },
+                    "keyCombo": {
+                         "key": "Space",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "GridMode"
+                    },
+                    "keyCombo": {
+                         "key": "Semicolon"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ClairvoyanceMode"
+                    },
+                    "keyCombo": {
+                         "key": "LeftBracket"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "VisionMode",
+                         "vision": {
+                              "detectionModel": "Narrow",
+                              "removeHallucinations": true
+                         }
+                    },
+                    "keyCombo": {
+                         "key": "RightBracket"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "VisionMode",
+                         "vision": {
+                              "detectionModel": "UltraNarrow",
+                              "removeHallucinations": true
+                         }
+                    },
+                    "keyCombo": {
+                         "key": "RightBracket",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "FinishSelection"
+                    },
+                    "keyCombo": {
+                         "key": "Enter"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "Reset"
+                    },
+                    "keyCombo": {
+                         "key": "Delete"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "PassThrough"
+                    },
+                    "keyCombo": {
+                         "key": "PrintScreen"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetFieldOfVision",
+                         "target": "Window"
+                    },
+                    "keyCombo": {
+                         "key": "F1"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetFieldOfVision",
+                         "target": "Monitor"
+                    },
+                    "keyCombo": {
+                         "key": "F2"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetFieldOfVision",
+                         "target": "AllMonitors"
+                    },
+                    "keyCombo": {
+                         "key": "F3"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ToggleFieldOfVision",
+                         "fovA": "Window",
+                         "fovB": "AllMonitors"
+                    },
+                    "keyCombo": {
+                         "key": "Tab"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ShiftFocus",
+                         "direction": "Up"
+                    },
+                    "keyCombo": {
+                         "key": "W",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ShiftFocus",
+                         "direction": "Left"
+                    },
+                    "keyCombo": {
+                         "key": "A",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ShiftFocus",
+                         "direction": "Down"
+                    },
+                    "keyCombo": {
+                         "key": "S",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ShiftFocus",
+                         "direction": "Right"
+                    },
+                    "keyCombo": {
+                         "key": "D",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "CycleWindows",
+                         "direction": "Backward"
+                    },
+                    "keyCombo": {
+                         "key": "Q",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "CycleWindows",
+                         "direction": "Forward"
+                    },
+                    "keyCombo": {
+                         "key": "E",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "FocusWindowBehind"
+                    },
+                    "keyCombo": {
+                         "key": "Z",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "CycleFieldsOfVision"
+                    },
+                    "keyCombo": {
+                         "key": "F",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "RefreshHints"
+                    },
+                    "keyCombo": {
+                         "key": "R",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "PathSelect",
+                         "margin": 10
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Quotes"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "RegionSelect",
+                         "margin": 10
+                    },
+                    "keyCombo": {
+                         "key": "Quotes"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "RegionSelect",
+                         "margin": 10
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "R"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "PathSelect",
+                         "margin": 10
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "P"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": -4,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "J",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": -4
+                    },
+                    "keyCombo": {
+                         "key": "I",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 4,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "L",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": 4
+                    },
+                    "keyCombo": {
+                         "key": "K",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": -2,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "J",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": -2
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "I",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 2,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "L",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": 2
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "K",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": -4,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "Left"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": -4
+                    },
+                    "keyCombo": {
+                         "key": "Up"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 4,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "Right"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": 4
+                    },
+                    "keyCombo": {
+                         "key": "Down"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": -2,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Left"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": -2
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Up"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 2,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Right"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": 2
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Down"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.0,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit1"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.125,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit2"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.25,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit3"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.375,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit4"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit5"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.625,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit6"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.75,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit7"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.875,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit8"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 1.0,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit9"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.0
+                    },
+                    "keyCombo": {
+                         "key": "Digit1",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.125
+                    },
+                    "keyCombo": {
+                         "key": "Digit2",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.25
+                    },
+                    "keyCombo": {
+                         "key": "Digit3",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.375
+                    },
+                    "keyCombo": {
+                         "key": "Digit4",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit5",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.625
+                    },
+                    "keyCombo": {
+                         "key": "Digit6",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.75
+                    },
+                    "keyCombo": {
+                         "key": "Digit7",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.875
+                    },
+                    "keyCombo": {
+                         "key": "Digit8",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 1.0
+                    },
+                    "keyCombo": {
+                         "key": "Digit9",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.0,
+                         "percentY": 1.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad1"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 1.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad2"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 1.0,
+                         "percentY": 1.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad3"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.0,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Numpad4"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Numpad5"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 1.0,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Numpad6"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.0,
+                         "percentY": 0.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad7"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad8"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 1.0,
+                         "percentY": 0.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad9"
+                    },
+                    "type": "keybind"
+               }
+          ],
+          "TextSelectionTool": [
+               {
+                    "action": {
+                         "classId": "Exit"
+                    },
+                    "keyCombo": {
+                         "key": "Escape"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "Clear"
+                    },
+                    "keyCombo": {
+                         "key": "Backspace"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "UndoHintSelection"
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Z"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "RevealOverlappedHints"
+                    },
+                    "keyCombo": {
+                         "key": "Space"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ToggleHintPlacement"
+                    },
+                    "keyCombo": {
+                         "key": "Space",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "GridMode"
+                    },
+                    "keyCombo": {
+                         "key": "Semicolon"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ClairvoyanceMode"
+                    },
+                    "keyCombo": {
+                         "key": "LeftBracket"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "VisionMode",
+                         "vision": {
+                              "detectionModel": "Narrow",
+                              "removeHallucinations": true
+                         }
+                    },
+                    "keyCombo": {
+                         "key": "RightBracket"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "VisionMode",
+                         "vision": {
+                              "detectionModel": "UltraNarrow",
+                              "removeHallucinations": true
+                         }
+                    },
+                    "keyCombo": {
+                         "key": "RightBracket",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "Run"
+                    },
+                    "keyCombo": {
+                         "key": "Enter"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "PassThrough"
+                    },
+                    "keyCombo": {
+                         "key": "PrintScreen"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetFieldOfVision",
+                         "target": "Window"
+                    },
+                    "keyCombo": {
+                         "key": "F1"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetFieldOfVision",
+                         "target": "Monitor"
+                    },
+                    "keyCombo": {
+                         "key": "F2"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetFieldOfVision",
+                         "target": "AllMonitors"
+                    },
+                    "keyCombo": {
+                         "key": "F3"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ToggleFieldOfVision",
+                         "fovA": "Window",
+                         "fovB": "AllMonitors"
+                    },
+                    "keyCombo": {
+                         "key": "Tab"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ShiftFocus",
+                         "direction": "Up"
+                    },
+                    "keyCombo": {
+                         "key": "W",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ShiftFocus",
+                         "direction": "Left"
+                    },
+                    "keyCombo": {
+                         "key": "A",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ShiftFocus",
+                         "direction": "Down"
+                    },
+                    "keyCombo": {
+                         "key": "S",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ShiftFocus",
+                         "direction": "Right"
+                    },
+                    "keyCombo": {
+                         "key": "D",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "CycleWindows",
+                         "direction": "Backward"
+                    },
+                    "keyCombo": {
+                         "key": "Q",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "CycleWindows",
+                         "direction": "Forward"
+                    },
+                    "keyCombo": {
+                         "key": "E",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "FocusWindowBehind"
+                    },
+                    "keyCombo": {
+                         "key": "Z",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "CycleFieldsOfVision"
+                    },
+                    "keyCombo": {
+                         "key": "F",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "RefreshHints"
+                    },
+                    "keyCombo": {
+                         "key": "R",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "alt": true,
+                         "classId": "ToggleModifiers",
+                         "ctrl": false,
+                         "shift": false
+                    },
+                    "keyCombo": {
+                         "key": "Comma"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "alt": false,
+                         "classId": "ToggleModifiers",
+                         "ctrl": true,
+                         "shift": false
+                    },
+                    "keyCombo": {
+                         "key": "Period"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "alt": false,
+                         "classId": "ToggleModifiers",
+                         "ctrl": false,
+                         "shift": true
+                    },
+                    "keyCombo": {
+                         "key": "Slash"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "alt": true,
+                         "classId": "ToggleModifiers",
+                         "ctrl": false,
+                         "shift": false
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "A"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "alt": false,
+                         "classId": "ToggleModifiers",
+                         "ctrl": true,
+                         "shift": false
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "C"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "alt": false,
+                         "classId": "ToggleModifiers",
+                         "ctrl": false,
+                         "shift": true
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "S"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": -4,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "J",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": -4
+                    },
+                    "keyCombo": {
+                         "key": "I",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 4,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "L",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": 4
+                    },
+                    "keyCombo": {
+                         "key": "K",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": -2,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "J",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": -2
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "I",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 2,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "L",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": 2
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "K",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": -4,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "Left"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": -4
+                    },
+                    "keyCombo": {
+                         "key": "Up"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 4,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "Right"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": 4
+                    },
+                    "keyCombo": {
+                         "key": "Down"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": -2,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Left"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": -2
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Up"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 2,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Right"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveTargets",
+                         "strideX": 0,
+                         "strideY": 2
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Down"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.0,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit1"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.125,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit2"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.25,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit3"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.375,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit4"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit5"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.625,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit6"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.75,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit7"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.875,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit8"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 1.0,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit9"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.0
+                    },
+                    "keyCombo": {
+                         "key": "Digit1",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.125
+                    },
+                    "keyCombo": {
+                         "key": "Digit2",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.25
+                    },
+                    "keyCombo": {
+                         "key": "Digit3",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.375
+                    },
+                    "keyCombo": {
+                         "key": "Digit4",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Digit5",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.625
+                    },
+                    "keyCombo": {
+                         "key": "Digit6",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.75
+                    },
+                    "keyCombo": {
+                         "key": "Digit7",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.875
+                    },
+                    "keyCombo": {
+                         "key": "Digit8",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 1.0
+                    },
+                    "keyCombo": {
+                         "key": "Digit9",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.0,
+                         "percentY": 1.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad1"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 1.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad2"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 1.0,
+                         "percentY": 1.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad3"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.0,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Numpad4"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Numpad5"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 1.0,
+                         "percentY": 0.5
+                    },
+                    "keyCombo": {
+                         "key": "Numpad6"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.0,
+                         "percentY": 0.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad7"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 0.5,
+                         "percentY": 0.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad8"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SnapTargets",
+                         "percentX": 1.0,
+                         "percentY": 0.0
+                    },
+                    "keyCombo": {
+                         "key": "Numpad9"
+                    },
+                    "type": "keybind"
+               }
+          ],
+          "WindowMoveTool": [
+               {
+                    "action": {
+                         "classId": "Exit"
+                    },
+                    "keyCombo": {
+                         "key": "Escape"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "PassThrough"
+                    },
+                    "keyCombo": {
+                         "key": "PrintScreen"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": -200,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "J"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": 0,
+                         "strideY": -200
+                    },
+                    "keyCombo": {
+                         "key": "I"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": 200,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "L"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": 0,
+                         "strideY": 200
+                    },
+                    "keyCombo": {
+                         "key": "K"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": -200,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "Left"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": 0,
+                         "strideY": -200
+                    },
+                    "keyCombo": {
+                         "key": "Up"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": 200,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "Right"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": 0,
+                         "strideY": 200
+                    },
+                    "keyCombo": {
+                         "key": "Down"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": -50,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "J",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": 0,
+                         "strideY": -50
+                    },
+                    "keyCombo": {
+                         "key": "I",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": 50,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "L",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": 0,
+                         "strideY": 50
+                    },
+                    "keyCombo": {
+                         "key": "K",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": -50,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "Left",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": 0,
+                         "strideY": -50
+                    },
+                    "keyCombo": {
+                         "key": "Up",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": 50,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "key": "Right",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": 0,
+                         "strideY": 50
+                    },
+                    "keyCombo": {
+                         "key": "Down",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": -10,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "J",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": 0,
+                         "strideY": -10
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "I",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": 10,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "L",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": 0,
+                         "strideY": 10
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "K",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": -10,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Left",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": 0,
+                         "strideY": -10
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Up",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": 10,
+                         "strideY": 0
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Right",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindow",
+                         "strideX": 0,
+                         "strideY": 10
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Down",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "FocusWindow",
+                         "direction": "Up"
+                    },
+                    "keyCombo": {
+                         "key": "W",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "FocusWindow",
+                         "direction": "Left"
+                    },
+                    "keyCombo": {
+                         "key": "A",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "FocusWindow",
+                         "direction": "Down"
+                    },
+                    "keyCombo": {
+                         "key": "S",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "FocusWindow",
+                         "direction": "Right"
+                    },
+                    "keyCombo": {
+                         "key": "D",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "CycleWindows",
+                         "direction": "Backward"
+                    },
+                    "keyCombo": {
+                         "key": "Q",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "CycleWindows",
+                         "direction": "Forward"
+                    },
+                    "keyCombo": {
+                         "key": "E",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "FocusWindowBehind"
+                    },
+                    "keyCombo": {
+                         "key": "Z",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindowToEdge",
+                         "direction": "Left"
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "J"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindowToEdge",
+                         "direction": "Up"
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "I"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindowToEdge",
+                         "direction": "Right"
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "L"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindowToEdge",
+                         "direction": "Down"
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "K"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindowToEdge",
+                         "direction": "Left"
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Left"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindowToEdge",
+                         "direction": "Up"
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Up"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindowToEdge",
+                         "direction": "Right"
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Right"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindowToEdge",
+                         "direction": "Down"
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Down"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "CenterWindowOnMonitor"
+                    },
+                    "keyCombo": {
+                         "key": "C"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ToggleMaximize"
+                    },
+                    "keyCombo": {
+                         "key": "M"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindowToMonitor",
+                         "direction": "Left"
+                    },
+                    "keyCombo": {
+                         "alt": "Either",
+                         "key": "J"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindowToMonitor",
+                         "direction": "Up"
+                    },
+                    "keyCombo": {
+                         "alt": "Either",
+                         "key": "I"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindowToMonitor",
+                         "direction": "Right"
+                    },
+                    "keyCombo": {
+                         "alt": "Either",
+                         "key": "L"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindowToMonitor",
+                         "direction": "Down"
+                    },
+                    "keyCombo": {
+                         "alt": "Either",
+                         "key": "K"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindowToMonitor",
+                         "direction": "Left"
+                    },
+                    "keyCombo": {
+                         "alt": "Either",
+                         "key": "Left"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindowToMonitor",
+                         "direction": "Up"
+                    },
+                    "keyCombo": {
+                         "alt": "Either",
+                         "key": "Up"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindowToMonitor",
+                         "direction": "Right"
+                    },
+                    "keyCombo": {
+                         "alt": "Either",
+                         "key": "Right"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindowToMonitor",
+                         "direction": "Down"
+                    },
+                    "keyCombo": {
+                         "alt": "Either",
+                         "key": "Down"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindowToVirtualDesktop",
+                         "direction": "Left"
+                    },
+                    "keyCombo": {
+                         "key": "Comma"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "MoveWindowToVirtualDesktop",
+                         "direction": "Right"
+                    },
+                    "keyCombo": {
+                         "key": "Period"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "axis": "All",
+                         "classId": "ResizeWindow",
+                         "delta": -50
+                    },
+                    "keyCombo": {
+                         "key": "U"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "axis": "All",
+                         "classId": "ResizeWindow",
+                         "delta": 50
+                    },
+                    "keyCombo": {
+                         "key": "O"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "axis": "Horizontal",
+                         "classId": "ResizeWindow",
+                         "delta": -50
+                    },
+                    "keyCombo": {
+                         "key": "U",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "axis": "Horizontal",
+                         "classId": "ResizeWindow",
+                         "delta": 50
+                    },
+                    "keyCombo": {
+                         "key": "O",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "axis": "Vertical",
+                         "classId": "ResizeWindow",
+                         "delta": -50
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "U"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "axis": "Vertical",
+                         "classId": "ResizeWindow",
+                         "delta": 50
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "O"
+                    },
+                    "type": "keybind"
+               }
+          ],
+          "WindowSnappingTool": [
+               {
+                    "action": {
+                         "classId": "Exit"
+                    },
+                    "keyCombo": {
+                         "key": "Escape"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "Snap"
+                    },
+                    "keyCombo": {
+                         "key": "Enter"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "Clear"
+                    },
+                    "keyCombo": {
+                         "key": "Backspace"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "Clear"
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Z"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "PassThrough"
+                    },
+                    "keyCombo": {
+                         "key": "PrintScreen"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "ResetLayout"
+                    },
+                    "keyCombo": {
+                         "key": "Digit1"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetLayout",
+                         "columns": 2,
+                         "rows": 1
+                    },
+                    "keyCombo": {
+                         "key": "Digit2"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetLayout",
+                         "columns": 3,
+                         "rows": 1
+                    },
+                    "keyCombo": {
+                         "key": "Digit3"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetLayout",
+                         "columns": 2,
+                         "rows": 2
+                    },
+                    "keyCombo": {
+                         "key": "Digit4"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetLayout",
+                         "columns": 3,
+                         "rows": 2
+                    },
+                    "keyCombo": {
+                         "key": "Digit5"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetLayout",
+                         "columns": 4,
+                         "rows": 2
+                    },
+                    "keyCombo": {
+                         "key": "Digit6"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetLayout",
+                         "columns": 5,
+                         "rows": 2
+                    },
+                    "keyCombo": {
+                         "key": "Digit7"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetLayout",
+                         "columns": 6,
+                         "rows": 2
+                    },
+                    "keyCombo": {
+                         "key": "Digit8"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetLayout",
+                         "columns": 3,
+                         "rows": 3
+                    },
+                    "keyCombo": {
+                         "key": "Digit9"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetLayout",
+                         "columns": 5,
+                         "rows": 5
+                    },
+                    "keyCombo": {
+                         "key": "Digit0"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetLayout",
+                         "columns": 1,
+                         "rows": 2
+                    },
+                    "keyCombo": {
+                         "key": "Digit2",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetLayout",
+                         "columns": 1,
+                         "rows": 3
+                    },
+                    "keyCombo": {
+                         "key": "Digit3",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetLayout",
+                         "columns": 2,
+                         "rows": 3
+                    },
+                    "keyCombo": {
+                         "key": "Digit5",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetLayout",
+                         "columns": 2,
+                         "rows": 4
+                    },
+                    "keyCombo": {
+                         "key": "Digit6",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetLayout",
+                         "columns": 2,
+                         "rows": 5
+                    },
+                    "keyCombo": {
+                         "key": "Digit7",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "SetLayout",
+                         "columns": 2,
+                         "rows": 6
+                    },
+                    "keyCombo": {
+                         "key": "Digit8",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "AdjustGap",
+                         "delta": 5
+                    },
+                    "keyCombo": {
+                         "key": "Minus"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "AdjustGap",
+                         "delta": -5
+                    },
+                    "keyCombo": {
+                         "key": "Equals"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "AdjustGap",
+                         "delta": 1
+                    },
+                    "keyCombo": {
+                         "key": "Minus",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "AdjustGap",
+                         "delta": -1
+                    },
+                    "keyCombo": {
+                         "key": "Equals",
+                         "shift": "Either"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "AdjustGap",
+                         "delta": 100
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Minus"
+                    },
+                    "type": "keybind"
+               },
+               {
+                    "action": {
+                         "classId": "AdjustGap",
+                         "delta": -100
+                    },
+                    "keyCombo": {
+                         "ctrl": "Either",
+                         "key": "Equals"
+                    },
+                    "type": "keybind"
+               }
+          ]
+     },
+     "version": 2
+}
