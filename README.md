@@ -70,3 +70,6 @@ The current files are kept as `*.bak` and NeverClick is started again.
    has per-desktop details.
 
 `Ctrl+Enter` is taken in every app once bound, as with NeverClick (e.g. "send" in some chat apps).
+
+hints only reads each app's accessibility info; its screenshot fallback is turned off. Chromium and
+Electron apps (Chrome, Discord, VS Code) show no labels unless started with `--force-renderer-accessibility`.

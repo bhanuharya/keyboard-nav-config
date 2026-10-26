@@ -2,5 +2,8 @@
   "hints": {
     "hint_upercase": false
   },
-  "alphabet": "jfkdlsavmeicnowrughtbyxqpz"
+  "alphabet": "jfkdlsavmeicnowrughtbyxqpz",
+  "backends": {
+    "enable": ["atspi"]
+  }
 }
